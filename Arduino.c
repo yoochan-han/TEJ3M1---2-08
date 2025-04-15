@@ -23,7 +23,7 @@ void setup() {
 void loop() {
     value = analogRead(POT_PIN); //analog value max value is 10k
     // servo
-    servoNumber1.write(value/10*1.8);
+    servoNumber1.write(value/10*1.8);  //This makes servo to turn 180 degree when get 1024 ohms
     Serial.print(value);
     Serial.print(" ohms\n");
     delay(100);
